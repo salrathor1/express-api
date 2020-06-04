@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightblue;
+    padding: 0 5%;
+}
+
+.container{
+    padding: 10px;
+}
+
+nav{
+    background-color: lightgray;
+    padding: 10px 15px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li{
+    padding-left: 20px;
+    list-style: none;
+}
+
+.people ul li{
+    padding-left: 20px;
+    list-style: none;
+}

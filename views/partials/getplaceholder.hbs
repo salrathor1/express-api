@@ -1,0 +1,20 @@
+{{!-- fetch files from lib/getplaceholder & display files here then use >partials to display on front end --}}
+
+<div class="people">
+    <h2> Data from SpaceX</h2>
+        {{#if listExists}}
+               <p>This is pulling data dynamically from the SpaceX API regarding all SpaceX missions.</p>
+               <br />
+
+                {{#each data}}
+                <div>
+                    <p>Mission name: {{this.mission_name}}</p>
+                    <p>Launch Year: {{this.launch_year}}</p>
+                    <p>Rocket ID: {{this.rocket.rocket_id}}</p>
+
+                    <br />
+                </div>
+                {{/each}}
+           
+        {{/if}}
+</div>
